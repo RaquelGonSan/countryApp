@@ -1,0 +1,17 @@
+<h2>By Region</h2>
+<hr />
+<div class="row">
+  <div class="col">
+    <!--SearchBox-->
+    <app-shared-search-box
+      (onValue)="searchByRegion($event)"
+      placeholder="Search by region"
+    ></app-shared-search-box>
+  </div>
+  <div class="row">
+    <div class="col">
+      <hr />
+      <app-country-table [countries]="listCountries"></app-country-table>
+    </div>
+  </div>
+</div>
